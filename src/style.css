@@ -1,0 +1,31 @@
+
+html {
+    background-color: #fff;
+    font-size: 20px;
+  }
+  button {
+    font-weight: 700;
+    background-color: #F44E3F;
+    border-radius: 30px;
+    min-width: 100px;
+    border:2px solid #d1b6b6;
+    font-size: 20px;
+    color: #fff;
+    height: 52px;
+   text-align: center;
+  } 
+  .h1 {
+    color: #0F7173;
+   margin: centerd;
+  }
+  
+  * {
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+  }
+    
+  .cvv {
+    margin-bottom: 45px;
+  
+  }

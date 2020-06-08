@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <img src="Images/Card-image.png" alt="logo_image" class="logo" />
+    <img src="Images/logo-image.png" alt="card_image" class="card" />
+    <h1>You are so close! you just need to make the payment</h1>
+    <form id="payment-form">
+      <p>Credit Card Number:</p>
+      <input type="text" id="tc-number" class="tc-number" />
+      <!-- <input type ="button" id="btn" value="submit"/> -->
+      <br />
+
+      <p>Card holder:</p>
+      <input type="name" id="holder-name" name="holder-name" /><br />
+      <p>Expiration date</p>
+      <input type="Date" id="Date" name="Date" /><br />
+      <p>cvv</p>
+      <input type="number" class="cvv" name="cvv" /><br />
+      <button class="pay-button" type="submit">Pay</button>
+    </form>
+
+    <script src="validator.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
