@@ -2,10 +2,6 @@ import validator from'./validator';
 
 // Seleccionar formulario y guardarlo en una variable
 var paymentForm = document.querySelector('#payment-form');
-
-
-
-
 /**
  * Agregar evento al formulario
  * Cuando se hace click en el boton Pay
