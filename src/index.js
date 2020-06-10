@@ -1,12 +1,9 @@
+import validator from'./validator';
+
 // Seleccionar formulario y guardarlo en una variable
 var paymentForm = document.querySelector('#payment-form');
 
-function maskify(creditCardNumber){
- let lastDig=creditCardNumber.slice(-4)
- let masked = lastDig.padStart(16,"#");
- alert(masked);
- return masked;
-}
+
 
 
 /**
@@ -31,6 +28,6 @@ function onSubmit(event) {
  */
   var numberInput = document.querySelector('#tc-number').value;
 
-  maskify(numberInput);
-  alert(validator(numberInput));
+  validator.maskify(numberInput);
+  alert(validator.isValid(numberInput));
 }
