@@ -1,4 +1,4 @@
-import validator from'./validator';
+import validator from './validator.js';
 
 // Seleccionar formulario y guardarlo en una variable
 var paymentForm = document.querySelector('#payment-form');
@@ -18,12 +18,13 @@ function onSubmit(event) {
   // Se detiene el comportamiento por defecto con preventDefault
   event.preventDefault();
 
+  
 /**
  * Se busca el elemento input de la pagina y se selecciona
  * el atributo value
  */
   var numberInput = document.querySelector('#tc-number').value;
-
+  
   validator.maskify(numberInput);
   alert(validator.isValid(numberInput));
-}
+} 
