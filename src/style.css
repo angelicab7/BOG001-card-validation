@@ -1,31 +1,88 @@
-
 html {
-    background-color: #fff;
-    font-size: 20px;
-  }
-  button {
-    font-weight: 700;
-    background-color: #F44E3F;
-    border-radius: 30px;
-    min-width: 100px;
-    border:2px solid #d1b6b6;
-    font-size: 20px;
-    color: #fff;
-    height: 52px;
-   text-align: center;
-  } 
-  .h1 {
-    color: #0F7173;
-   margin: centerd;
-  }
-  
-  * {
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-  }
-    
-  .cvv {
-    margin-bottom: 45px;
-  
-  }
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.container1 {
+  display: flex;
+  border-radius: 25px;
+}
+
+button {
+  font-weight: 700;
+  background-color: #f44e3f;
+  border-radius: 30px;
+  min-width: 100px;
+  border: 2px solid #d1b6b6;
+  font-size: 20px;
+  color: #fff;
+  height: 52px;
+  text-align: center;
+}
+h1 {
+  color: #0f7173;
+  margin-top: 10px;
+}
+
+* {
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.cvv {
+  margin-bottom: 45px;
+}
+
+.logo {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.container1 > div {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.div2 {
+  width: 50%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.div1 {
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex: 1;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.input-label {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  height: 2rem;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+}

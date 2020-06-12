@@ -4,26 +4,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <img src="Images/logo-image.png" alt="logo_image" class="logo" />
   </head>
   <body>
-    <img src="Images/Card-image.png" alt="logo_image" class="logo" />
-    <img src="Images/logo-image.png" alt="card_image" class="card" />
     <h1>You are so close! you just need to make the payment</h1>
-    <form id="payment-form">
-      <p>Credit Card Number:</p>
-      <input type="text" id="tc-number" class="tc-number" />
-      <!-- <input type ="button" id="btn" value="submit"/> -->
-      <br />
-
-      <p>Card holder:</p>
-      <input type="name" id="holder-name" name="holder-name" /><br />
-      <p>Expiration date</p>
-      <input type="Date" id="Date" name="Date" /><br />
-      <p>cvv</p>
-      <input type="number" class="cvv" name="cvv" /><br />
-      <button class="pay-button" type="submit">Pay</button>
-    </form>
-
+    <div class="container1">
+      <div class="div1">
+        <form id="payment-form">
+          <div class="form-row">
+            <div class="form-column">
+              <div class="form-input">
+                <p class="input-label">Credit Card Number:</p>
+                <input type="text" id="tc-number" class="tc-number" />
+              </div>
+              <div class="form-input">
+                <p class="input-label">Card holder: </p>
+                <input type="name" id="holder-name" name="holder-name" />
+              </div>
+            </div>
+            <div class="form-column">
+              <div class="form-input">
+                <p class="input-label">Expiration date: </p>
+                <input type="Date" id="Date" name="Date" />
+              </div>
+              <div class="form-input">
+                <p class="input-label">cvv: </p>
+                <input type="number" id="cvv" name="cvv" />
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <button class="pay-button" type="submit">Pay</button>
+          </div>
+        </form>
+      </div>
+      <div class="div2">
+        <img src="Images/Card-image.png" alt="card_image" class="card" />
+      </div>
+    </div>
     <script src="validator.js"></script>
     <script src="index.js"></script>
   </body>
