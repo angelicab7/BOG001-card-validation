@@ -4,16 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <img src="Images/logo-image.png" alt="logo_image" class="logo" />
     <title>Card validator</title>
   </head>
   <body>
-    <div class="store">
-      <img src="Images/Icon-kiosco.png" alt="Icon-kiosco" class="kiosco" />
-      <h3>Store</h3>
-    </div>
-   
-    <h1>You are so close! you just need to make the payment</h1>
+    <header>
+      <img src="Images/logo-image.png" alt="logo_image" class="logo" />
+      <div class="Main-menu">
+        <div class="Menu-item">
+          <i class="fas fa-store"></i>
+          <h3>Store</h3>
+        </div>
+        <div class="Menu-item">
+          <i class="fas fa-shopping-cart"></i>
+          <h3>Cart</h3>
+        </div>
+      </div>
+    </header>
+
+    <h1 class="margin-t-2 margin-b-2">You are so close! you just need to make the payment</h1>
     <div class="container1">
       <div class="div1">
         <form id="payment-form">
@@ -24,17 +32,17 @@
                 <input type="number" id="tc-number" class="tc-number" />
               </div>
               <div class="form-input">
-                <p class="input-label">Card holder: </p>
+                <p class="input-label">Card holder:</p>
                 <input type="name" id="holder-name" name="holder-name" />
               </div>
             </div>
             <div class="form-column">
               <div class="form-input">
-                <p class="input-label">Expiration date: </p>
+                <p class="input-label">Expiration date:</p>
                 <input type="Date" id="Date" name="Date" />
               </div>
               <div class="form-input">
-                <p class="input-label">cvv: </p>
+                <p class="input-label">cvv:</p>
                 <input type="number" id="cvv" name="cvv" />
               </div>
             </div>
@@ -48,6 +56,10 @@
         <img src="Images/Card-image.png" alt="card_image" class="card" />
       </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/2eed4717d6.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js" type="module"></script>
   </body>
 </html>
