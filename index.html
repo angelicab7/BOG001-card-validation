@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Card validator</title>
+  </head>
+  <body>
+    <header>
+      <img src="Images/logo-image.png" alt="logo_image" class="logo" />
+      <div class="Main-menu">
+        <div class="Menu-item">
+          <i class="fas fa-store"></i>
+          <h3>Store</h3>
+        </div>
+        <div class="Menu-item">
+          <i class="fas fa-shopping-cart"></i>
+          <h3>Cart</h3>
+        </div>
+      </div>
+    </header>
+
+    <h1 class="margin-t-2 margin-b-2">
+      You are so close! you just need to make the payment
+    </h1>
+    <div class="container1">
+      <div class="div1">
+        <form id="payment-form">
+          <div class="form-row">
+            <div class="form-column">
+              <div class="form-input">
+                <p class="input-label">Credit Card Number:</p>
+                <input type="number" id="tc-number" class="tc-number" />
+              </div>
+              <div class="form-input">
+                <p class="input-label">Card holder:</p>
+                <input type="name" id="holder-name" name="holder-name" />
+              </div>
+            </div>
+            <div class="form-column">
+              <div class="form-input">
+                <p class="input-label">Expiration date:</p>
+                <input type="Date" id="Date" name="Date" />
+              </div>
+              <div class="form-input">
+                <p class="input-label">cvv:</p>
+                <input type="number" id="cvv" name="cvv" />
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <button class="pay-button" type="submit">Pay</button>
+          </div>
+        </form>
+      </div>
+      <div class="Container2">
+        <div class="div2">
+          <img src="Images/Card-image.png" alt="card_image" class="card" />
+        </div>
+        <div class="Card-icons">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-diners-club"></i> 
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/2eed4717d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" type="module"></script>
+  </body>
+ <div class="Footer">
+  <footer>
+  <div class="Social-media margin-t-2">
+    <p>Follow us on all of our social media!</p>
+  </div>
+  <div class="Icons-socialMedia">
+    <i class="fab fa-twitter-square"></i>
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-youtube-square"></i>
+    <i class="fab fa-instagram-square"></i>
+  </div>
+  <div class="Copyright">
+    <p>Copyright &copy; 2020 Maria Alejandra ibáñez and Angélica Bonilla, all rights reserved,
+      name takenfrom the simpsons serie.</p>
+  </div>
+</footer>
+ </div> 
+  
+</html>
