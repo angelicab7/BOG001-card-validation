@@ -24,5 +24,18 @@
   },
   "devDependencies": {
     "jest": "^24.9.0"
-  }
+  },
+  "description": "Nuestro proyecto es de un validador de tarjetas que va a facilitar a los usuarios hacer sus compras de mercado en tiendas de barrio , dada la situación actual, evitando que salgan a la calle a exponerse.",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelicab7/BOG001-card-validation.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/angelicab7/BOG001-card-validation/issues"
+  },
+  "homepage": "https://github.com/angelicab7/BOG001-card-validation#readme"
 }
