@@ -17,7 +17,7 @@ html {
 
 button {
   font-weight: 700;
-  background-color: #f44e3f;
+  background-color: rgb(250, 120, 108);
   border-radius: 30px;
   min-width: 100px;
   border: 2px solid #d1b6b6;
@@ -201,8 +201,8 @@ p {
   bottom: 0;
   right: 0;
   /*Tamaño*/
-  height: 40%;
-  width: 40%;
+  height: 30%;
+  width: 30%;
   /*Colores*/
   background-color: white;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
@@ -229,11 +229,17 @@ p {
 }
 
 .dialog.successful .icon-info {
-  font-size: 5rem;
-  color: #0f7173;
+  font-size: 3rem;
+  color: #0f7173;  
 }
 
 .dialog.wrong .icon-info {
-  font-size: 5rem;
+  font-size: 3rem;
   color: red;
+}
+.font{
+  font-family: "Lato", sans-serif; 
+}
+.style{
+  font-family: "Lato", sans-serif
 }
