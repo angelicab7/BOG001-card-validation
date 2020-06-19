@@ -31,7 +31,13 @@
             <div class="form-column">
               <div class="form-input">
                 <p class="input-label">Credit Card Number:</p>
-                <input type="number" id="tc-number" class="tc-number" />
+                <!-- Agregamos required al input para que sea obligatorio llenar el campo y sea validado antes de enviar -->
+                <input
+                  type="number"
+                  id="tc-number"
+                  class="tc-number"
+                  required
+                />
               </div>
               <div class="form-input">
                 <p class="input-label">Card holder:</p>
@@ -62,7 +68,7 @@
           <i class="fab fa-cc-visa"></i>
           <i class="fab fa-cc-paypal"></i>
           <i class="fab fa-cc-mastercard"></i>
-          <i class="fab fa-cc-diners-club"></i> 
+          <i class="fab fa-cc-diners-club"></i>
           <i class="fab fa-cc-amex"></i>
           <i class="fab fa-cc-apple-pay"></i>
         </div>
@@ -74,22 +80,35 @@
     ></script>
     <script src="index.js" type="module"></script>
   </body>
- <div class="Footer">
-  <footer>
-  <div class="Social-media margin-t-2">
-    <p>Follow us on all of our social media!</p>
+  <div class="Footer">
+    <footer>
+      <div class="Social-media margin-t-2">
+        <p>Follow us on all of our social media!</p>
+      </div>
+      <div class="Icons-socialMedia">
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-youtube-square"></i>
+        <i class="fab fa-instagram-square"></i>
+      </div>
+      <div class="Copyright">
+        <p>
+          Copyright &copy; 2020 Maria Alejandra ibáñez and Angélica Bonilla. All
+          rights reserved, name taken from the simpsons serie.
+        </p>
+      </div>
+    </footer>
   </div>
-  <div class="Icons-socialMedia">
-    <i class="fab fa-twitter-square"></i>
-    <i class="fab fa-facebook-square"></i>
-    <i class="fab fa-youtube-square"></i>
-    <i class="fab fa-instagram-square"></i>
+  <div class="dialog successful">
+    <i class="fas fa-check-circle close"></i>
+    <i class="fas fa-check-circle icon-info"></i>
+    <h3 class="margin-t-1">Payment successful</h3>
   </div>
-  <div class="Copyright">
-    <p>Copyright &copy; 2020 Maria Alejandra ibáñez and Angélica Bonilla, all rights reserved,
-      name takenfrom the simpsons serie.</p>
+  <div class="dialog wrong">
+    <i class="fas fa-check-circle close"></i>
+    <i class="fas fa-check-circle icon-info"></i>
+    <h3 class="margin-t-1">
+      The credit card is not valid. Please check the information provided.
+    </h3>
   </div>
-</footer>
- </div> 
-  
 </html>

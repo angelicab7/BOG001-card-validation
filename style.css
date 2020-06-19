@@ -48,9 +48,9 @@ h1 {
   display: flex;
   align-content: center;
   flex-flow: column wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .div1 {
   width: 50%;
@@ -129,8 +129,8 @@ header {
 }
 .Menu-item:hover {
   border-bottom: 3px solid #0f7173;
+  margin-bottom: -3px;
 }
-
 
 /*Utils-------------------------*/
 .margin-t-1 {
@@ -146,46 +146,94 @@ header {
 }
 
 .margin-b-2 {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
-
 
 /*---------------------------------*/
 
-.container2{
+.container2 {
   box-sizing: border-box;
   justify-content: space-around;
 }
-.Card-icons{
+.Card-icons {
   margin-bottom: 1rem;
   color: #0f7173;
   padding: 1rem;
   cursor: pointer;
   justify-content: space-around;
   align-items: center;
-  height:50px;
+  height: 50px;
   margin-top: auto;
   font-size: 30px;
 }
-.Social-media{
-  margin-top: 150px;
-  font-family:"Lato", sans-serif;
-  text-align:center;
-  margin-bottom:5px;
+
+/*Footer*/
+.Social-media {
+  margin-top: 70px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-bottom: 25px;
 }
-.Icons-socialMedia{
+.Icons-socialMedia {
   color: #0f7173;
-  padding: 1rem;
   cursor: pointer;
-  justify-content: space-around;
-  align-items: center;
-  height:50px;
   margin-top: auto;
   font-size: 30px;
 }
-.Footer{
+.Footer {
   font-weight: 300;
 }
-p{
+p {
   font-size: 30x;
+}
+
+/*Successful Dialog*/
+.dialog {
+  /*Escondemos el dialogo por defecto*/
+  display: none;
+  /* Centrar */
+  margin: auto;
+  /*Dejarlo fijo en la pantalla*/
+  position: fixed;
+  /*Posicionamos en elemento en el centro*/
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /*Tamaño*/
+  height: 40%;
+  width: 40%;
+  /*Colores*/
+  background-color: white;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  /*Bordes redondeados*/
+  border-radius: 2rem;
+  /*Para que no se pegue el contenido al borde usamos padding*/
+  padding: 1rem;
+  /*Centramos los elementos con flexbox*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog.active {
+  display: flex;
+}
+
+.dialog .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.dialog.successful .icon-info {
+  font-size: 5rem;
+  color: #0f7173;
+}
+
+.dialog.wrong .icon-info {
+  font-size: 5rem;
+  color: red;
 }
