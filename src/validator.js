@@ -41,7 +41,6 @@ const validator = {
     let len= creditCardNumber.length
     let lastDig=creditCardNumber.slice(-4)
     let masked = lastDig.padStart(len,"#");
-    alert(masked);
     return masked;
    }
 };
