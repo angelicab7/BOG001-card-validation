@@ -62,7 +62,25 @@
       </div>
       <div class="Container2">
         <div class="div2">
-          <img src="Images/Card-image.png" alt="card_image" class="card" />
+          <div class="credit-card-viewer">
+            <div class="brand-name">
+              <i class="fab fa-cc-visa"></i>
+            </div>
+            <div class="number"></div>
+            <div class="extra-data">
+              <div id="tc-holder-name-viewer" class="item">
+                <span class="label">Holder Name</span
+                ><span class="value"> </span>
+              </div>
+              <div id="tc-holder-cvv-viewer" class="item">
+                <span class="label">CVV</span><span class="value"> </span>
+              </div>
+              <div id="tc-holder-expiration-viewer" class="item">
+                <span class="label">Expiration Date</span
+                ><span class="value"> </span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="Card-icons">
           <i class="fab fa-cc-visa"></i>
@@ -74,41 +92,42 @@
         </div>
       </div>
     </div>
+    <div class="Footer">
+      <footer>
+        <div class="Social-media margin-t-2">
+          <p>Follow us on all of our social media!</p>
+        </div>
+        <div class="Icons-socialMedia">
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-youtube-square"></i>
+          <i class="fab fa-instagram-square"></i>
+        </div>
+        <div class="Copyright">
+          <p>
+            Copyright &copy; 2020 Maria Alejandra ibáñez and Angélica Bonilla.
+            All rights reserved, name taken from the simpsons serie.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <div class="dialog successful">
+      <i class="fas fa-times close"></i>
+      <i class="far fa-check-circle icon-info"></i>
+      <p class="margin-t-1 style">Payment successful</p>
+    </div>
+    <div class="dialog wrong">
+      <i class="fas fa-times close"></i>
+      <i class="far fa-times-circle icon-info"></i>
+      <p class="margin-t-1 style">
+        The credit card is not valid. Please check the information provided.
+      </p>
+    </div>
     <script
       src="https://kit.fontawesome.com/2eed4717d6.js"
       crossorigin="anonymous"
     ></script>
     <script src="index.js" type="module"></script>
+    <script src="credit-card.js" type="module"></script>
   </body>
-  <div class="Footer">
-    <footer>
-      <div class="Social-media margin-t-2">
-        <p>Follow us on all of our social media!</p>
-      </div>
-      <div class="Icons-socialMedia">
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-youtube-square"></i>
-        <i class="fab fa-instagram-square"></i>
-      </div>
-      <div class="Copyright">
-        <p>
-          Copyright &copy; 2020 Maria Alejandra ibáñez and Angélica Bonilla. All
-          rights reserved, name taken from the simpsons serie.
-        </p>
-      </div>
-    </footer>
-  </div>
-  <div class="dialog successful">
-    <i class="fas fa-times close"></i>
-    <i class="far fa-check-circle icon-info"></i>
-    <p class="margin-t-1 style">Payment successful</p>
-  </div>
-  <div class="dialog wrong">
-    <i class="fas fa-times close"></i>
-    <i class="far fa-times-circle icon-info"></i>
-    <p class="margin-t-1 style">
-      The credit card is not valid. Please check the information provided.
-    </p>
-  </div>
 </html>
